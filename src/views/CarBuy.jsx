@@ -16,7 +16,7 @@ const CarBuy = ({ pizza }) => {
             pizzaPedidas[idx].cant += 1;
             setPizzaPedidas([...pizzaPedidas]);
         } else {
-            const pizzaSeleccionada = { id: id, cant: 1 };
+            const pizzaSeleccionada = { id: pizza.id, name: pizza.name, price: pizza.price, cant: 1 };
             setPizzaPedidas([...pizzaPedidas, pizzaSeleccionada]);
         }
         setTotalPedido(totalPedido + pizza.price)
@@ -44,7 +44,7 @@ const CarBuy = ({ pizza }) => {
                     <b>${pizza.price}</b>
                 </Card.Text>
                 <Card.Body id='buttons'>
-                    <Button variant="info" onClick={() => agregarPizza(pizza.id)}>🛒 Añadir</Button>
+                    <Button variant="info" onClick={() => agregarPizza(pizza)}>🛒 Añadir</Button>
                     <Button variant="danger" onClick={() => verDetalle()}>👀 Ver mas</Button>
                 </Card.Body>
             </Card>

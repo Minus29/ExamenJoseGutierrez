@@ -12,7 +12,8 @@ const Carrito = () => {
                 {
                     pizzaPedidas.map((p) => {
                         return <div>
-                            <div>{p.id}</div>
+                            <div>{p.name}</div>
+                            <div>{p.price}</div>
                             <div>{p.cant}</div>
                         </div>
                     })
