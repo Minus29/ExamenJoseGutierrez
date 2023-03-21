@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <MyContext.Provider value={pizzas}>
+      <MyContext.Provider value={{pizzas}}>
         <BrowserRouter>
           <Navbars> </Navbars>
           <Routes>
