@@ -3,7 +3,7 @@ import MyContext from '../Components/MyContext'
 import { useContext } from 'react';
 
 const Carrito = () => {
-    const { pizzaPedidas } = useContext(MyContext);
+    const { pizzaPedidas, totalPedido } = useContext(MyContext);
 
     return (
         <div>
@@ -18,6 +18,7 @@ const Carrito = () => {
                         </div>
                     })
                 }
+                <div>Total Pedido:${totalPedido} </div>
             </div>
         </div>
     )
