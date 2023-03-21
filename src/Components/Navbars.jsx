@@ -2,18 +2,24 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from 'react-router-dom';
 
 const Navbars = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" variant="dark" id='nav'>
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <NavLink
+            className={({ isActive }) => (isActive ? "viewActiva" : "view")}
+            to="/" >
+            🍕Pizzeria Mamma Mia!
+          </NavLink>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? "viewActiva" : "view")}
+              to="/carrito" >
+              🛒
+            </NavLink>
           </Nav>
         </Container>
       </Navbar>

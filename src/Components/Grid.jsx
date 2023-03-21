@@ -9,7 +9,7 @@ import { Row, Col } from 'react-bootstrap'
 const Grid = () => {
     const { pizzas } = useContext(MyContext);
     return (
-        <div className="galeria grid-columns-4 p-3">
+        <>
             <Row>
                 {
                     pizzas.map((pizza) => {
@@ -17,7 +17,7 @@ const Grid = () => {
                     })
                 }
             </Row>
-        </div>
+        </>
     )
 }
 
