@@ -11,16 +11,16 @@ const Navbars = () => {
     <div>
       <Navbar collapseOnSelect expand="lg" variant="dark" id='nav'>
         <Container>
-          <NavLink
+          <NavLink id='navtext'
             className={({ isActive }) => (isActive ? "viewActiva" : "view")}
             to="/" >
             🍕Pizzeria Mamma Mia!
           </NavLink>
           <Nav>
-            <NavLink
+            <NavLink  id='navtext2'
               className={({ isActive }) => (isActive ? "viewActiva" : "view")}
               to="/carrito" >
-              🛒{totalPedido}
+              🛒 ${totalPedido}
             </NavLink>
           </Nav>
         </Container>

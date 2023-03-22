@@ -39,8 +39,22 @@
 }
 
 #nav {
-  color: white;
   background-color: #3CC9C9;
+  height: 60px;
+}
+
+#navtext{
+ text-decoration: none;
+ list-style-type: none;
+ color: white;
+ font-size: 17px;
+}
+
+#navtext2{
+  text-decoration: none;
+  list-style-type: none;
+  color: #636363;
+  font-weight: 800;
 }
 
 #card {
@@ -75,6 +89,10 @@
 #cardDetalle{
   margin: 20px;
   text-align: justify;
+}
+
+#titleheader {
+  font-size: 30px;
 }
 
 
