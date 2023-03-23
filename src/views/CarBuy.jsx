@@ -12,14 +12,14 @@ const CarBuy = ({ pizza }) => {
 
     const agregarPizza = (id) => {
         const idx = pizzaPedidas.findIndex((p) => p.id === id);
-        if (idx > -1) {
+        if (idx >= 0) {
             pizzaPedidas[idx].cant += 1;
             setPizzaPedidas([...pizzaPedidas]);
         } else {
-            const pizzaSeleccionada = { id: pizza.id, name: pizza.name, price: pizza.price, cant: 1 };
+            const pizzaSeleccionada = { id: pizza.id, name: pizza.name, price: pizza.price, img: pizza.img, cant: 1 };
             setPizzaPedidas([...pizzaPedidas, pizzaSeleccionada]);
         }
-        setTotalPedido(totalPedido + pizza.price)
+        setTotalPedido(totalPedido + pizza.price);
     }
 
     const verDetalle = () => {

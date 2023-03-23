@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -43,17 +44,17 @@
   height: 60px;
 }
 
-#navtext{
- text-decoration: none;
- list-style-type: none;
- color: white;
- font-size: 17px;
-}
-
-#navtext2{
+#navtext {
   text-decoration: none;
   list-style-type: none;
-  color: #636363;
+  color: white;
+  font-size: 17px;
+}
+
+#navtext2 {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
   font-weight: 800;
 }
 
@@ -73,12 +74,13 @@
 #buttons button {
   margin: 0px 20px;
   color: white;
+  display: flex;
 }
 
-#header{
+#header {
   height: 30vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://emprendeconhuevos.com/wp-content/uploads/2020/07/thumb-1920-858236.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://emprendeconhuevos.com/wp-content/uploads/2020/07/thumb-1920-858236.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -86,14 +88,18 @@
   align-items: center;
 }
 
-#cardDetalle{
-  margin: 20px;
-  text-align: justify;
+#cardDetalle {
+  text-align: center;
 }
 
 #titleheader {
   font-size: 30px;
 }
 
+#imgcarrito {
+  width: 50px;
+}
 
-
+#carritox {
+  height: 100vh;
+}
